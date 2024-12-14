@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+    int i;
+    printf("numebers from 1 to 100 which are multiples of 2 are as follows: \n");
+    
+    for(i=1;i<=100;i++)
+    {
+        if(i%2==0)
+        printf("%d ",i);
+    }
+}
