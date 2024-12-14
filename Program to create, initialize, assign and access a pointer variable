@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+    long int n, *first, *second;
+    printf("enter value of your desired number = ");
+    scanf("%d",&n);
+    first=&n;
+    second=first;
+    printf("pointer variables are as follows: \n");
+    printf("first number = %d\n",*first);
+    printf("second number = %d\n",*second);
+    printf("original number = %d",n);
+}
