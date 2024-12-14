@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int BS,DA,GS,HRA;
+    printf("enter basic salary BS = ");
+    scanf("%d",&BS);
+    
+    DA=0.4*BS;
+    printf("\n DA amount is = %d",DA);
+    
+    HRA=0.6*BS;
+    printf("\n HRA amount is - %d",HRA);
+    
+    GS=BS+DA+HRA;
+    printf("\n gross salary is = %d ",GS);
+    
+}
