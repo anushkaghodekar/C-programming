@@ -1,0 +1,68 @@
+#include<stdio.h>
+void sum1();
+void sum2(int a,int b);
+int sum3();
+int sum4(int a, int b);
+
+int main()
+{
+    int num1,num2,result;
+    printf("1. functions with no arguments and no return value\n");
+    sum1();
+    
+    printf("2. functions with arguments and no return values\n");
+    printf("enter first number = ");
+    scanf("%d",&num1);
+    printf("enter second number=");
+    scanf("%d",&num2);
+    sum2(num1,num2);
+    
+    printf("3. functions with no arguments and return values\n");
+    result=sum3();
+    printf("the sum is = %d\n",result);
+    
+    printf("4. funtions with arguments and return vales\n");
+    printf("enter first number = ");
+    scanf("%d",&num1);
+    printf("enter second number=");
+    scanf("%d",&num2);
+    result=sum4(num1,num2);
+    printf("the sum is = %d\n",result);
+    
+return 0;
+}
+void sum1()
+{
+    int a,b,result;
+    printf("enter first number = ");
+    scanf("%d",&a);
+    printf("enter second number=");
+    scanf("%d",&b);
+    result = a+b;
+    printf("the sum is = %d\n",result);
+}
+
+void sum2(int a, int b)
+{
+    int result;
+    result=a+b;
+    printf("the sum is = %d\n",result);
+}
+
+int sum3()
+{
+    int a,b,result;
+    printf("enter first number = ");
+    scanf("%d",&a);
+    printf("enter second number=");
+    scanf("%d",&b);
+    result = a+b;
+    return result;
+}
+
+int sum4(int a, int b)
+{
+    int result;
+    result=a+b;
+    return result;
+}
