@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+int h,t,o,a,b,c,sum,n;
+ printf("Enter a three digit numbers 100th place value = ");
+ scanf("%d",&h);
+ printf("Enter the 10th place value = ");
+ scanf("%d",&t);
+ printf("Enter the once place value = ");
+ scanf("%d",&o);
+ n=(h*100)+(t*10)+(o*1);
+ printf("%d",n);
+ a=h*h*h;
+ b=t*t*t;
+ c=o*o*o;
+ sum=a+b+c;
+ if(n==sum)
+ {
+ printf("\n Number is armstrong");
+ }
+ else
+ {
+ printf("\n Number is not a armstrong");
+ }
+}
