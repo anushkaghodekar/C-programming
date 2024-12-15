@@ -1,0 +1,42 @@
+#include<stdio.h>
+struct student
+{
+    char name[100],branch[100];
+    int rollno,m1,m2,m3,m4,m5,total;
+}stu[5],t;
+
+void main()
+{
+    int i,j;
+    for(i=0;i<5;i++)
+    {
+        printf("enter name of student = ");
+        scanf("%s",stu[i].name);
+        printf("enter branch = ");
+        scanf("%s",stu[i].branch);
+        printf("enter rollno. = ");
+        scanf("%d",stu[i].rollno);
+        printf("enter marks in m1,m2,m3,m4,m5 = ");
+        scanf("%d %d %d %d %d",stu[i].m1,stu[i].m2,stu[i].m3,stu[i].m4,stu[i].m5);
+        stu[i].total=stu[i].m1+stu[i].m2+stu[i].m3+stu[i].m4+stu[i].m5;
+    }
+    for(i=0;i<5;i++)
+    {
+        for(j=1;j<5;j++)
+        {
+            if(stu[j].total<stu[i].total)
+            {
+                t=stu[i];
+                stu[i]=stu[j];
+                stu[j]=t;
+            }
+        }
+    }
+    
+    printf("displaying the student details : \n");
+    printf("rollno\tname\tbranch\ttotal");
+    for(i=0;i<5;i++)
+    {
+        printf("\n%d\t%s\t%s\t%d",stu[i].rollno,stu[i].name,stu[i].branch,stu[i].total);
+    }
+}
