@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    int eng,math,phy,chem,total;
+    float percent;
+    printf("enter eng marks out of 100 = ");
+    scanf("%d",&eng);
+    printf("enter math marks out of 100 = ");
+    scanf("%d",&math);
+    printf("enter phy marks out of 100 = ");
+    scanf("%d",&phy);
+    printf("enter chem marks out of 100 = ");
+    scanf("%d",&chem);
+    
+    total=eng+math+phy+chem;
+    percent=total*0.25;
+    
+    if(percent>=75.00)
+    {
+        printf("you have scored distinction");
+    }
+    else if(percent>=60.00)
+    {
+        printf("you have scored first class");
+    }
+    else if(percent>=40.00)
+    {
+        printf("you have scored second class");
+    }
+    else printf("you failed ");
+}
