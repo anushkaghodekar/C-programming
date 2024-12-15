@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+ int c,n,f1=0,f2=1,fib;
+ printf("Enter the number of terms = ");
+ scanf("%d",&n);
+ printf("Fibbonacci Series : ");
+ for(c=1;c<=n;c++)
+ {
+ printf("%d \t",f1);
+ fib=f1+f2;
+ f1=f2;
+ f2=fib;
+ }
+ return 0;
+}
