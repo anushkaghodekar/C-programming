@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+    int i,a,b,sum=0,count=0;
+    printf("enter starting number = ");
+    scanf("%d",&a);
+    printf("enter ending number = ");
+    scanf("%d",&b);
+    
+    for(i=a;i<=b;i++)
+    {
+        if(i%2==0)
+        {
+            sum=sum+i;
+            count++;
+        }
+    }
+    printf("count = %d\n",count);
+    printf("sum = %d",sum);
+}
