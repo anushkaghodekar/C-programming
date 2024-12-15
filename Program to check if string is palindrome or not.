@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char name[100],copy[100];
+    printf("enter any name = ");
+    gets(name);
+    strcpy(copy,name);
+    strrev(name);
+    if(strcpy(copy,name)==0)
+    {
+        printf("string is palindrome");
+    }
+    else printf("string is not palindrome");
+}
